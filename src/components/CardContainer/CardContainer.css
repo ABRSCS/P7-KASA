@@ -1,0 +1,25 @@
+/*** CARD CONTAINER CSS ***/
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-grid-gap);
+    padding: var(--spacing-grid-padding);
+    background-color: var(--background-color);
+    border-radius: var(--spacing-grid-radius);
+    margin: var(--spacing-grid-margin) auto;
+    width: 100%;
+    max-width: var(--container-width);
+}
+
+@media screen and (max-width: 600px) {
+    .card-container {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-grid-gap-mobile);
+        padding: var(--spacing-grid-padding-mobile) 0;
+        background-color: transparent;
+        margin: var(--spacing-grid-margin-mobile) 0;
+        border-radius: var(--spacing-grid-radius-mobile);
+        width: 100%;
+        max-width: 100%;
+    }
+} 

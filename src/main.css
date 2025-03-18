@@ -1,0 +1,113 @@
+/*** MAIN CSS ***/
+
+/* Import des composants */
+@import './components/CardContainer/CardContainer.css';
+
+/* Reset de base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Variables CSS globales */
+
+:root {
+
+  /* Couleurs */
+  --primary-color: white;
+  --secondary-color: #FF6060;
+  --third-color: black;
+  --background-color: #F6F6F6;
+
+
+  /* Typographie */
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-family-main: 'Montserrat';
+
+  /* Espacement */
+  --spacing-container: 50px;
+  --spacing-grid-gap: 4vw;
+  --spacing-grid-padding: 4vw;
+  --spacing-grid-margin: 3vw;
+  --spacing-grid-radius: 2vw;
+
+  /* Espacement mobile */
+  --spacing-container-mobile: 20px;
+  --spacing-grid-gap-mobile: 3vw;
+  --spacing-grid-padding-mobile: 3vw;
+  --spacing-grid-margin-mobile: 2vw;
+  --spacing-grid-radius-mobile: 1.5vw;
+
+  /* Mise en page */
+  --container-width: 1240px;
+  background-color: var(--primary-color);
+}
+
+/* Styles de base */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-main);
+  background-color: var(--primary-color);
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  padding: 0 var(--spacing-container);
+}
+
+p,
+h2,
+ul {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--third-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    padding: 0 var(--spacing-container-mobile);
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+}

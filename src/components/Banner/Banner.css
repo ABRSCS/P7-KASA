@@ -1,0 +1,62 @@
+/*** Banner.css***/
+.banner {
+    position: relative;
+    height: 223px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* 60% d'opacité par défaut (home) */
+}
+
+.banner.about::before {
+    background-color: rgba(0, 0, 0, 0.7); /* 30% d'opacité pour la page about */
+}
+  
+.banner-title {
+    position: relative;
+    color: white;
+    font-size: 3rem;
+    font-weight: var(--font-weight-bold);
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    padding-left: 5px; 
+    text-align: center;
+}
+  
+.banner-image {
+    display: none; 
+}
+
+@media screen and (max-width: 600px) {
+    .banner {
+        height: 111px;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .banner-title {
+        font-size: 1.5rem;
+        padding: 0 16px;
+        text-align: left !important;
+        width: 100%;
+        display: block;
+    }
+}
