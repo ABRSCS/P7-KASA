@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "./Header.css";
-import logo from '/Users/ab/Documents/OC/P7 2/kasa/src/assets/images/LOGO.png';
+import logo from '../../assets/images/LOGO.png';
 
 const Header = () => {
     return (
@@ -25,5 +25,3 @@ const Header = () => {
 };
 
 export default Header;
-
-

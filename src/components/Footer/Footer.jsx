@@ -1,6 +1,6 @@
 // FOOTER.jsx
 import "./Footer.css";
-import logo1 from "/Users/ab/Documents/OC/P7 2/kasa/src/assets/images/LOGO(1).png";
+import logo1 from "../../assets/images/LOGO(1).png";
 
 
 const Footer = () => {

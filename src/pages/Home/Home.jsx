@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import Banner from '../../components/Banner/Banner';
 import Card from '../../components/Card/Card';
+import CardContainer from '../../components/CardContainer/CardContainer';
 import homeBanner from '../../assets/images/Imagesource1.png';
 import "./Home.css";
 
@@ -39,7 +40,7 @@ const Home = () => {
                     altText="Paysage de montagne"
                     title="Chez vous, partout et ailleurs"
                 />
-                <div className="card-container">
+                <CardContainer>
                     {logements.map((logement) => (
                         <Card
                             key={logement.id}
@@ -48,7 +49,7 @@ const Home = () => {
                             imageUrl={logement.cover}
                         />
                     ))}
-                </div>
+                </CardContainer>
             </div>
         </div>
     );

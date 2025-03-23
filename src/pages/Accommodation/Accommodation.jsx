@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import Collapse from '../../components/Collapse/Collapse';
 import StarRating from '../../components/StarRating/StarRating';
 import Slideshow from '../../components/Slideshow/Slideshow';
+import Error from '../Error/Error';
 import "./Accommodation.css";
 
 const Accommodation = () => {
@@ -34,7 +35,7 @@ const Accommodation = () => {
     }, [id]);
 
     if (error) {
-        return <div className="error-message">{error}</div>;
+       return <Error/>
     }
 
     if (!logement) {
