@@ -13,7 +13,7 @@ function Banner({ image, altText, title }) {
 
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
-    }, []);
+    }, [setIsMobile]);
 
     const formatTitle = (title) => {
         if (!title) return null;
