@@ -39,7 +39,7 @@ const Accommodation = () => {
     }
 
     if (!logement) {
-        return <div className="loading">Chargement...</div>;
+        return <Error/>
     }
   
     return (
