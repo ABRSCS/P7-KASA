@@ -83,7 +83,7 @@ Les logements sont stockés dans le fichier :
 
 ## 👤 Auteur
 
-- Alexia – [Ton profil GitHub](https://github.com/ABRSCS)
+- Alexia – [profil GitHub](https://github.com/ABRSCS)
 
 ## 📄 Licence
 
